@@ -27,7 +27,7 @@ function selectVideoImplementation(commandArgs, options) {
     }
 
     if (options.shellTransport) {
-        return withStreamingServer(withHTMLSubtitles(ShellVideo));
+        return withHTMLSubtitles(ShellVideo);
     }
 
     if (typeof commandArgs.streamingServerURL === 'string') {
